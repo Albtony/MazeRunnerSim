@@ -94,9 +94,11 @@ class Djikstra:
         self.mapData = mapData
         self.start = start
         self.goal = goal
+        raise NotImplementedError("This function is not implemented yet.")
 
 class AStar:
     def __init__(self, mapData, start, goal):
         self.mapData = mapData
         self.start = start
         self.goal = goal
+        raise NotImplementedError("This function is not implemented yet.")
