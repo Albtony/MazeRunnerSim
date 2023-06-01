@@ -44,9 +44,6 @@ class MapEntity:
         else:
             return []
         
-        # if entity.stepToGoal > 0 and entity.path[0] == entity.position:
-        #     entity.path.pop(0)
-    
     def drawEntityPath(self, entity: Entity):
         counter = 2
         entityPathing = deepcopy(self.map.mapState)
