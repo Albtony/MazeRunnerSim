@@ -101,7 +101,6 @@ class AStar:
         self.mapData = mapData
         self.start = start
         self.goal = goal
-        raise NotImplementedError("This function is not implemented yet.")
     
     def search(self):
         openSet = queue.PriorityQueue()
@@ -109,7 +108,6 @@ class AStar:
         cameFrom = {}
         gScore = self.initializeDictInf()
         fScore = self.initializeDictInf()
-        return []
 
     def initializeDictInf(self):
         # hehe
@@ -119,7 +117,7 @@ class AStar:
 
         for i in range(rows):
             for j in range(cols):
-                pos = [i, j]
+                pos = (i, j)
                 myDict[pos] = float('inf')
         
         return myDict
